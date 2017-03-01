@@ -11,3 +11,4 @@ class Background(Sprite):
 		self.rect = self.image.get_rect();
 		self.rect.left = 0;
 		self.rect.top = 0;
+		

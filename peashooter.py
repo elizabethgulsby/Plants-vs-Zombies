@@ -10,5 +10,5 @@ class Peashooter(Plant):
 		self.image_file = './images/peashooter.png';
 		self.screen = screen;
 		self.square = square; #child is setting this, parent doesn't need to as well.
-		
+
 		super(Peashooter, self).__init__();  #sending self up to parent class (Plant) - child will also grab everything parent class has

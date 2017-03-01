@@ -8,7 +8,9 @@ class Settings():
 		self.bg_color = (82,111,53);
 		self.zombie_speed = 5;
 		self.zombie_health = 5;
-		# square stuff - starting pos is where mouse button clicked (pygame.mouse.gete_pos() in game_functions)
+		self.game_active = True;
+
+		# square stuff - starting pos is determined by where mouse button clicked (pygame.mouse.gete_pos() in game_functions)
 		self.squares = {
 			"start_left": 367,
 			"start_top": 245,
@@ -21,6 +23,14 @@ class Settings():
 				560,
 				665
 			]
-		}
+		};
+		self.highlighted_square = 0;
+		self.zombie_in_row = [  #initialized with no zombies in rows - this index will be updated as the game starts (at each index) - entire game becomes aware of zombie in row (set to an integer)
+			0,
+			0,
+			0,
+			0,
+			0
+		]
 
 

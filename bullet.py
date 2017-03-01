@@ -12,6 +12,7 @@ class Bullet(Sprite):
 
 		self.rect.centerx = plant.rect.centerx;
 		self.rect.top = plant.rect.top;
+		self.yard_row = plant.yard_row;  #bullet knows what yard row it's in now, permanently
 		
 		self.x = self.rect.x;
 		self.y = self.rect.y;
